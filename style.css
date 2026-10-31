@@ -1,0 +1,83 @@
+/* --- PENGATURAN UMUM AGAR TIDAK OVERFLOW --- */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  overflow-x: hidden; /* Mencegah layar geser ke samping/horizontal */
+}
+
+/* --- PERBAIKAN NAVBAR / MENU UTAMA DI HP --- */
+@media screen and (max-width: 768px) {
+  .navbar {
+    padding: 15px 20px;
+  }
+  
+  .nav-links {
+    /* Sesuaikan jika menggunakan menu dropdown atau ingin menyembunyikan link tertentu */
+    font-size: 14px;
+  }
+}
+
+/* --- PERBAIKAN HERO SECTION / UTAMA --- */
+@media screen and (max-width: 768px) {
+  .hero-container, .about-container {
+    flex-direction: column; /* Mengubah susunan dari samping ke bawah di HP */
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .hero-text h1 {
+    font-size: 28px; /* Ukuran font disesuaikan agar tidak terlalu besar di layar HP */
+  }
+}
+
+/* --- PERBAIKAN KALKULATOR JOKI (MLBB/PUBG) --- */
+.calculator-container, .joki-card {
+  width: 100%;
+  max-width: 100%;
+  padding: 15px;
+}
+
+/* Membuat form input dan dropdown bertumpuk rapi ke bawah di HP */
+@media screen and (max-width: 768px) {
+  .calc-form-group, .input-row {
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  select, input, button {
+    width: 100% !important; /* Tombol dan kotak input memenuhi lebar layar HP */
+    font-size: 16px; /* Ukuran font aman untuk disentuh jari (mencegah zoom otomatis di iOS) */
+    padding: 12px;
+  }
+}
+
+/* --- PERBAIKAN GALERI DESAIN (GRID FOTO) --- */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Tampilan default di komputer */
+  gap: 15px;
+  padding: 10px;
+}
+
+/* Saat dibuka di Tablet */
+@media screen and (max-width: 1024px) {
+  .gallery-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Saat dibuka di HP (Android / iOS) */
+@media screen and (max-width: 600px) {
+  .gallery-grid {
+    grid-template-columns: 1fr; /* Foto desain berderet 1 ke bawah agar besar dan jelas */
+  }
+  
+  .gallery-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+}
