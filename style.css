@@ -172,4 +172,44 @@ select {
   display: block !important;
   margin: 0 !important;
 }
+
+/* --- FIX TOTAL DROPDOWN TEMBUS KANAN DI HP --- */
+
+/* 1. Paksa pembungkus utama terkunci rapat di dalam layar */
+.joki-calculator, 
+.joki-card, 
+#calcForm, 
+.calc-form {
+  width: 100% !important;
+  max-width: 100% !important;
+  box-sizing: border-box !important;
+  overflow: hidden !important; /* Memotong elemen apa pun yang nekat meluber */
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
+/* 2. Bersihkan pembungkus form-group dari margin/padding aneh */
+.form-group {
+  width: 100% !important;
+  max-width: 100% !important;
+  box-sizing: border-box !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  display: block !important;
+}
+
+/* 3. Paksa elemen select/dropdown menghormati lebar parent 100% */
+select.form-control, 
+input.form-control, 
+.form-control {
+  width: 100% !important;
+  max-width: 100% !important;
+  min-width: 0 !important; /* Mencegah elemen membesar melebihi parent flex */
+  box-sizing: border-box !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  display: block !important;
+}
 }
