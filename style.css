@@ -8,20 +8,19 @@ body {
   padding: 0;
   width: 100%;
   overflow-x: hidden; /* Mencegah layar geser ke samping */
-  background-color: #0b0f19; /* Sesuaikan dengan warna background gelap kamu */
+  background-color: #0b0f19;
   color: #ffffff;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
 }
 
 /* --- PERBAIKAN JARAK AMAN LAYAR & CONTAINER --- */
-.container, .calculator-section, .calculator-card {
+.container, .calculator-section {
   width: 100%;
   max-width: 100%;
   box-sizing: border-box;
   margin: 0 auto;
 }
 
-/* Memberikan ruang aman di tepi kiri dan kanan layar HP */
 @media screen and (max-width: 768px) {
   .container, .calculator-section {
     padding: 0 16px;
@@ -44,7 +43,7 @@ body {
 }
 
 .game-btn, .tab-item {
-  flex: 1; /* Membagi rata lebar tombol agar seimbang kiri dan kanan */
+  flex: 1;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -53,7 +52,45 @@ body {
   box-sizing: border-box;
 }
 
-/* --- PERBAIKAN FORM INPUT & KALKULATOR DI HP --- */
+/* --- PERBAIKAN KARTU UTAMA & KOTAK DROPDOWN RANK DI HP --- */
+.calculator-card, .joki-card, .calculator-container {
+  width: 100% !important;
+  max-width: 100% !important;
+  box-sizing: border-box !important;
+  overflow: hidden;
+}
+
+.calc-form-group, .input-group, .form-group {
+  width: 100% !important;
+  box-sizing: border-box !important;
+  margin-bottom: 15px;
+}
+
+/* Mengatur agar kotak dropdown rank & input pas di dalam card tanpa melebar */
+select, input, .dropdown-select, .select-box {
+  width: 100% !important;
+  max-width: 100% !important;
+  box-sizing: border-box !important;
+  display: block;
+  padding: 12px 14px;
+  font-size: 15px; /* Ukuran aman di iOS agar tidak zoom otomatis */
+  border-radius: 8px;
+  flex: none !important;
+}
+
+/* Styling panah dropdown bawaan */
+select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image: url("data:image/svg+xml;utf8,<svg fill='%23ffffff' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/></svg>");
+  background-repeat: no-repeat;
+  background-position: right 12px center;
+  background-size: 16px;
+  padding-right: 35px;
+}
+
+/* --- RESPONSIF FORM LAINNYA --- */
 @media screen and (max-width: 768px) {
   .hero-container, .about-container {
     flex-direction: column;
@@ -69,33 +106,25 @@ body {
     flex-direction: column;
     gap: 10px;
   }
-  
-  select, input, button {
-    width: 100% !important;
-    font-size: 16px; /* Mencegah zoom otomatis pada perangkat iOS */
-    padding: 12px;
-  }
 }
 
 /* --- PERBAIKAN GALERI DESAIN (GRID FOTO) --- */
 .gallery-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* Default di komputer */
+  grid-template-columns: repeat(3, 1fr);
   gap: 15px;
   padding: 10px;
 }
 
-/* Tampilan di Tablet */
 @media screen and (max-width: 1024px) {
   .gallery-grid {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
-/* Tampilan di HP (Android & iOS) */
 @media screen and (max-width: 600px) {
   .gallery-grid {
-    grid-template-columns: 1fr; /* Berderet 1 ke bawah agar rapi dan besar */
+    grid-template-columns: 1fr;
   }
   
   .gallery-item img {
