@@ -7,7 +7,7 @@ body {
   margin: 0;
   padding: 0;
   width: 100%;
-  overflow-x: hidden; /* Mencegah layar geser ke samping */
+  overflow-x: hidden;
   background-color: #0b0f19;
   color: #ffffff;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
@@ -52,33 +52,37 @@ body {
   box-sizing: border-box;
 }
 
-/* --- PERBAIKAN KARTU UTAMA & KOTAK DROPDOWN RANK DI HP --- */
-.calculator-card, .joki-card, .calculator-container {
+/* --- PENYEMPURNAAN MENYELURUH BAGIAN KALKULATOR (ML & PUBG) --- */
+.calculator-card, .joki-card, .calculator-container, 
+#ml-section, #pubg-section, .ml-calculator, .pubg-calculator {
   width: 100% !important;
   max-width: 100% !important;
   box-sizing: border-box !important;
   overflow: hidden;
 }
 
-.calc-form-group, .input-group, .form-group {
+.calc-form-group, .input-group, .form-group, div[class*="group"], div[class*="input"] {
   width: 100% !important;
+  max-width: 100% !important;
   box-sizing: border-box !important;
   margin-bottom: 15px;
 }
 
-/* Mengatur agar kotak dropdown rank & input pas di dalam card tanpa melebar */
-select, input, .dropdown-select, .select-box {
+/* Memaksa semua elemen kotak pilihan, dropdown, dan input di ML/PUBG agar pas di dalam layar */
+select, input, .dropdown-select, .select-box, 
+.calculator-card select, .calculator-card input, 
+.joki-card select, .joki-card input {
   width: 100% !important;
   max-width: 100% !important;
   box-sizing: border-box !important;
   display: block;
   padding: 12px 14px;
-  font-size: 15px; /* Ukuran aman di iOS agar tidak zoom otomatis */
+  font-size: 15px;
   border-radius: 8px;
   flex: none !important;
 }
 
-/* Styling panah dropdown bawaan */
+/* Styling panah dropdown agar seragam */
 select {
   appearance: none;
   -webkit-appearance: none;
@@ -90,7 +94,7 @@ select {
   padding-right: 35px;
 }
 
-/* --- RESPONSIF FORM LAINNYA --- */
+/* --- RESPONSIF TAMPILAN HP --- */
 @media screen and (max-width: 768px) {
   .hero-container, .about-container {
     flex-direction: column;
