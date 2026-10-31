@@ -7,7 +7,7 @@ body {
   margin: 0;
   padding: 0;
   width: 100%;
-  overflow-x: hidden;
+  overflow-x: hidden; /* Mencegah layar geser ke samping */
   background-color: #0b0f19;
   color: #ffffff;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
@@ -52,37 +52,37 @@ body {
   box-sizing: border-box;
 }
 
-/* --- PENYEMPURNAAN MENYELURUH BAGIAN KALKULATOR (ML & PUBG) --- */
+/* --- PERBAIKAN MUTLAK KARTU & DROPDOWN RANK (ML & PUBG) DI HP --- */
 .calculator-card, .joki-card, .calculator-container, 
-#ml-section, #pubg-section, .ml-calculator, .pubg-calculator {
+.joki-section, .joki-calculator, .calc-form {
   width: 100% !important;
   max-width: 100% !important;
   box-sizing: border-box !important;
   overflow: hidden;
 }
 
-.calc-form-group, .input-group, .form-group, div[class*="group"], div[class*="input"] {
+.calc-form-group, .input-group, .form-group, .form-control {
   width: 100% !important;
   max-width: 100% !important;
   box-sizing: border-box !important;
   margin-bottom: 15px;
+  display: block !important;
 }
 
-/* Memaksa semua elemen kotak pilihan, dropdown, dan input di ML/PUBG agar pas di dalam layar */
+/* Mengatur agar kotak dropdown rank & input pas di dalam card tanpa melebar */
 select, input, .dropdown-select, .select-box, 
-.calculator-card select, .calculator-card input, 
-.joki-card select, .joki-card input {
+select.form-control, input.form-control {
   width: 100% !important;
   max-width: 100% !important;
   box-sizing: border-box !important;
   display: block;
   padding: 12px 14px;
-  font-size: 15px;
+  font-size: 15px; /* Ukuran aman di iOS agar tidak zoom otomatis */
   border-radius: 8px;
   flex: none !important;
 }
 
-/* Styling panah dropdown agar seragam */
+/* Styling panah dropdown bawaan */
 select {
   appearance: none;
   -webkit-appearance: none;
@@ -94,7 +94,7 @@ select {
   padding-right: 35px;
 }
 
-/* --- RESPONSIF TAMPILAN HP --- */
+/* --- RESPONSIF FORM LAINNYA --- */
 @media screen and (max-width: 768px) {
   .hero-container, .about-container {
     flex-direction: column;
@@ -109,6 +109,13 @@ select {
   .calc-form-group, .input-row {
     flex-direction: column;
     gap: 10px;
+  }
+  
+  /* Penyesuaian khusus mobile untuk kalkulator */
+  .joki-section, .joki-calculator, .calc-form {
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+    margin: 0 auto !important;
   }
 }
 
@@ -135,35 +142,5 @@ select {
     width: 100%;
     height: auto;
     border-radius: 8px;
-  }
-}
-
-/* --- PERBAIKAN MUTLAK UNTUK DROPDOWN & FORM KALKULATOR DI HP --- */
-@media screen and (max-width: 768px) {
-  /* Memastikan pembungkus kalkulator tidak melebihi layar */
-  .joki-section, .joki-calculator, .calc-form {
-    width: 100% !important;
-    max-width: 100% !important;
-    box-sizing: border-box !important;
-    padding-left: 10px !important;
-    padding-right: 10px !important;
-    margin: 0 auto !important;
-  }
-
-  /* Memastikan setiap group form dan elemen select/input patuh pada lebar layar */
-  .form-group, .form-control {
-    width: 100% !important;
-    max-width: 100% !important;
-    box-sizing: border-box !important;
-    display: block !important;
-  }
-
-  /* Mengunci ukuran kotak dropdown form-control agar tidak keluar garis */
-  select.form-control, input.form-control {
-    width: 100% !important;
-    max-width: 100% !important;
-    box-sizing: border-box !important;
-    padding: 12px 14px !important;
-    font-size: 15px !important;
   }
 }
