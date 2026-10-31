@@ -143,4 +143,33 @@ select {
     height: auto;
     border-radius: 8px;
   }
+
+  /* --- FIX UTAMA OVERFLOW DROPDOWN DI MOBILE --- */
+
+/* 1. Kunci kontainer utama kalkulator agar memiliki padding internal yang aman */
+.joki-calculator, .joki-card, .calc-form {
+  width: 100% !important;
+  max-width: 100% !important;
+  box-sizing: border-box !important;
+  padding: 16px !important; /* Memberikan jarak aman di dalam kartu */
+  overflow: hidden !important; /* Mencegah elemen apa pun keluar batas */
+}
+
+/* 2. Kunci elemen form group */
+.form-group {
+  width: 100% !important;
+  max-width: 100% !important;
+  box-sizing: border-box !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
+/* 3. Paksa select & input berukuran tepat 100% dari form-group (sudah termasuk padding) */
+.form-control, select.form-control, input.form-control {
+  width: 100% !important;
+  max-width: 100% !important;
+  box-sizing: border-box !important;
+  display: block !important;
+  margin: 0 !important;
+}
 }
