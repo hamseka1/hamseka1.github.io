@@ -835,7 +835,9 @@
       <div class="social-links">
         <a href="https://instagram.com/ilhmrdha" target="_blank" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
         <a href="https://wa.me/6282215744402" target="_blank" title="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
-        <a href="#" title="GitHub"><i class="fa-brands fa-github"></i></a>
+        <a href="https://github.com/hamseka1" target="_blank" class="social-icon">
+    <i class="fab fa-github"></i> GitHub
+</a>
       </div>
       <p>&copy; 2026 Portfolio & Joki Services. All rights reserved.</p>
     </div>
@@ -877,27 +879,29 @@
         });
       }
 
-      for (let h = 26; h <= 50; h++) {
+      // Mythic Honor (Bintang 26 - 50, anggaplah rentang bintang berikutnya)
+    for (let honor = 26; honor <= 50; honor++) {
         list.push({
-          label: `Mythical Honor - Bintang ${h}`,
-          price: 12000
+            label: `Mythic Honor - Bintang ${honor}`,
+            price: 10000
         });
-      }
+    }
 
-      for (let g = 51; g <= 99; g++) {
+    // Mythic Glory (Bintang 51 - 100)
+    for (let glory = 51; glory <= 100; glory++) {
         list.push({
-          label: `Mythical Glory - Bintang ${g}`,
-          price: 15000
+            label: `Mythic Glory - Bintang ${glory}`,
+            price: 12000
         });
-      }
+    }
 
-      for (let im = 100; im <= 150; im++) {
+    // Mythical Immortal (Bintang 101 sampai 500)
+    for (let immortal = 101; immortal <= 500; immortal++) {
         list.push({
-          label: `Mythical Immortal - Bintang ${im}`,
-          price: 18000
+            label: `Mythical Immortal - Bintang ${immortal}`,
+            price: 15000
         });
-      }
-
+    }
       return list;
     }
 
