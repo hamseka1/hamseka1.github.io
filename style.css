@@ -1,55 +1,78 @@
-/* --- PENGATURAN UMUM AGAR TIDAK OVERFLOW --- */
+/* --- PENGATURAN UMUM & AGAR TIDAK OVERFLOW --- */
 * {
   box-sizing: border-box;
 }
 
 body {
+  margin: 0;
+  padding: 0;
   width: 100%;
-  overflow-x: hidden; /* Mencegah layar geser ke samping/horizontal */
+  overflow-x: hidden; /* Mencegah layar geser ke samping */
+  background-color: #0b0f19; /* Sesuaikan dengan warna background gelap kamu */
+  color: #ffffff;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
 }
 
-/* --- PERBAIKAN NAVBAR / MENU UTAMA DI HP --- */
+/* --- PERBAIKAN JARAK AMAN LAYAR & CONTAINER --- */
+.container, .calculator-section, .calculator-card {
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+/* Memberikan ruang aman di tepi kiri dan kanan layar HP */
 @media screen and (max-width: 768px) {
-  .navbar {
-    padding: 15px 20px;
-  }
-  
-  .nav-links {
-    /* Sesuaikan jika menggunakan menu dropdown atau ingin menyembunyikan link tertentu */
-    font-size: 14px;
+  .container, .calculator-section {
+    padding: 0 16px;
   }
 }
 
-/* --- PERBAIKAN HERO SECTION / UTAMA --- */
+/* --- PERBAIKAN NAVBAR / LOGO UTAMA --- */
+.navbar, .logo-container {
+  padding: 15px 20px !important;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* --- PERBAIKAN TOMBOL PILIHAN GAME (MLBB & PUBG) --- */
+.game-selector, .tab-container {
+  display: flex;
+  gap: 12px;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.game-btn, .tab-item {
+  flex: 1; /* Membagi rata lebar tombol agar seimbang kiri dan kanan */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 12px;
+  box-sizing: border-box;
+}
+
+/* --- PERBAIKAN FORM INPUT & KALKULATOR DI HP --- */
 @media screen and (max-width: 768px) {
   .hero-container, .about-container {
-    flex-direction: column; /* Mengubah susunan dari samping ke bawah di HP */
+    flex-direction: column;
     text-align: center;
     padding: 20px;
   }
   
   .hero-text h1 {
-    font-size: 28px; /* Ukuran font disesuaikan agar tidak terlalu besar di layar HP */
+    font-size: 28px;
   }
-}
 
-/* --- PERBAIKAN KALKULATOR JOKI (MLBB/PUBG) --- */
-.calculator-container, .joki-card {
-  width: 100%;
-  max-width: 100%;
-  padding: 15px;
-}
-
-/* Membuat form input dan dropdown bertumpuk rapi ke bawah di HP */
-@media screen and (max-width: 768px) {
   .calc-form-group, .input-row {
     flex-direction: column;
     gap: 10px;
   }
   
   select, input, button {
-    width: 100% !important; /* Tombol dan kotak input memenuhi lebar layar HP */
-    font-size: 16px; /* Ukuran font aman untuk disentuh jari (mencegah zoom otomatis di iOS) */
+    width: 100% !important;
+    font-size: 16px; /* Mencegah zoom otomatis pada perangkat iOS */
     padding: 12px;
   }
 }
@@ -57,22 +80,22 @@ body {
 /* --- PERBAIKAN GALERI DESAIN (GRID FOTO) --- */
 .gallery-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* Tampilan default di komputer */
+  grid-template-columns: repeat(3, 1fr); /* Default di komputer */
   gap: 15px;
   padding: 10px;
 }
 
-/* Saat dibuka di Tablet */
+/* Tampilan di Tablet */
 @media screen and (max-width: 1024px) {
   .gallery-grid {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
-/* Saat dibuka di HP (Android / iOS) */
+/* Tampilan di HP (Android & iOS) */
 @media screen and (max-width: 600px) {
   .gallery-grid {
-    grid-template-columns: 1fr; /* Foto desain berderet 1 ke bawah agar besar dan jelas */
+    grid-template-columns: 1fr; /* Berderet 1 ke bawah agar rapi dan besar */
   }
   
   .gallery-item img {
