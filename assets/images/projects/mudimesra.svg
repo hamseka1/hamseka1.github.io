@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" role="img" aria-label="Abstract browser illustration for the Mudimesra.com website analysis project">
+  <defs>
+    <linearGradient id="md-bg" x1="0" y1="0" x2="1200" y2="750" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0A1120"/>
+      <stop offset="1" stop-color="#080B12"/>
+    </linearGradient>
+    <linearGradient id="md-window" x1="260" y1="190" x2="940" y2="600" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#131E31"/>
+      <stop offset="1" stop-color="#0B1220"/>
+    </linearGradient>
+    <linearGradient id="md-accent" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#2563EB"/>
+      <stop offset="1" stop-color="#06B6D4"/>
+    </linearGradient>
+    <radialGradient id="md-glow" cx="62%" cy="35%" r="45%">
+      <stop stop-color="#06B6D4" stop-opacity=".22"/>
+      <stop offset="1" stop-color="#06B6D4" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="md-grid" width="52" height="52" patternUnits="userSpaceOnUse">
+      <path d="M52 0H0v52" fill="none" stroke="#94A3B8" stroke-opacity=".05"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="750" fill="url(#md-bg)"/>
+  <rect width="1200" height="750" fill="url(#md-grid)"/>
+  <rect width="1200" height="750" fill="url(#md-glow)"/>
+  <g opacity=".9">
+    <rect x="220" y="170" width="760" height="430" rx="24" fill="url(#md-window)" stroke="#94A3B8" stroke-opacity=".18"/>
+    <rect x="220" y="170" width="760" height="58" rx="24" fill="#101827"/>
+    <rect x="220" y="204" width="760" height="24" fill="#101827"/>
+    <circle cx="258" cy="199" r="6" fill="#F87171" opacity=".7"/>
+    <circle cx="280" cy="199" r="6" fill="#FBBF24" opacity=".7"/>
+    <circle cx="302" cy="199" r="6" fill="#34D399" opacity=".7"/>
+    <rect x="342" y="188" width="330" height="22" rx="11" fill="#080B12" stroke="#94A3B8" stroke-opacity=".14"/>
+    <text x="362" y="204" fill="#94A3B8" font-family="'JetBrains Mono', 'Consolas', monospace" font-size="12" letter-spacing="1">mudimesra.com</text>
+    <rect x="260" y="268" width="292" height="292" rx="18" fill="#0B1220" stroke="#94A3B8" stroke-opacity=".1"/>
+    <rect x="292" y="300" width="118" height="14" rx="7" fill="#60A5FA" opacity=".8"/>
+    <rect x="292" y="328" width="206" height="9" rx="4.5" fill="#94A3B8" opacity=".28"/>
+    <rect x="292" y="348" width="178" height="9" rx="4.5" fill="#94A3B8" opacity=".2"/>
+    <rect x="292" y="368" width="194" height="9" rx="4.5" fill="#94A3B8" opacity=".16"/>
+    <rect x="292" y="410" width="96" height="34" rx="17" fill="url(#md-accent)"/>
+    <rect x="292" y="486" width="228" height="46" rx="10" fill="#101827" stroke="#94A3B8" stroke-opacity=".12"/>
+    <rect x="584" y="268" width="356" height="132" rx="18" fill="#0B1220" stroke="#94A3B8" stroke-opacity=".1"/>
+    <rect x="614" y="298" width="78" height="9" rx="4.5" fill="#94A3B8" opacity=".35"/>
+    <rect x="614" y="322" width="150" height="20" rx="10" fill="#F8FAFC" opacity=".75"/>
+    <rect x="614" y="360" width="280" height="9" rx="4.5" fill="#94A3B8" opacity=".16"/>
+    <rect x="584" y="428" width="356" height="132" rx="18" fill="#0B1220" stroke="#94A3B8" stroke-opacity=".1"/>
+    <path d="M614 520c30-38 52 10 84-22 30-30 48 16 78-12 28-26 50 8 74-20 16-18 30-8 46-22" fill="none" stroke="url(#md-accent)" stroke-width="3"/>
+    <path d="M614 500v38h310" fill="none" stroke="#94A3B8" stroke-opacity=".12"/>
+  </g>
+  <g font-family="'JetBrains Mono', 'Consolas', monospace" fill="#94A3B8" font-size="15" letter-spacing="3">
+    <text x="150" y="650">CASE STUDY / 02</text>
+    <text x="150" y="684" fill="#F8FAFC" font-family="'Space Grotesk', 'Segoe UI', sans-serif" font-size="30" font-weight="700" letter-spacing="1">WEBSITE ANALYSIS</text>
+    <text x="1050" y="684" text-anchor="end" fill="#60A5FA">MUDIMESRA.COM</text>
+  </g>
+  <rect x="149" y="708" width="54" height="3" rx="1.5" fill="#2563EB"/>
+  <rect x="211" y="708" width="18" height="3" rx="1.5" fill="#06B6D4"/>
+</svg>

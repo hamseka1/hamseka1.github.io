@@ -1,0 +1,29 @@
+{
+  "name": "HAMSKY — Muhammad Ilham Mauridha",
+  "short_name": "HAMSKY",
+  "description": "The personal portfolio of Muhammad Ilham Mauridha — IT student, aspiring developer, and esports champion from Banda Aceh, Indonesia.",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#080B12",
+  "theme_color": "#080B12",
+  "icons": [
+    {
+      "src": "favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "assets/images/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "assets/images/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}
