@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta name="color-scheme" content="dark">
+  <meta name="theme-color" content="#080B12">
+  <title>404 — Halaman Tidak Ditemukan | HAMSKY</title>
+  <meta name="description" content="Halaman yang Anda cari tidak ada di situs HAMSKY. Kembali ke beranda.">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="favicon.ico" sizes="16x16 32x32 48x48">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/sections.css">
+  <link rel="stylesheet" href="css/sections-extra.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <script src="js/boot.js"></script>
+  <style>
+    .error-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 60px 20px;
+      min-height: 70vh;
+    }
+    .error-code {
+      font-family: var(--font-display);
+      font-size: 9rem;
+      font-weight: 700;
+      letter-spacing: -0.03em;
+      color: rgba(248, 250, 252, 0.1);
+      line-height: 1;
+      margin-bottom: 16px;
+    }
+    .error-title {
+      font-family: var(--font-display);
+      font-size: 1.75rem;
+      font-weight: 700;
+      color: #F8FAFC;
+      margin-bottom: 8px;
+    }
+    .error-desc {
+      color: var(--muted);
+      font-size: 1rem;
+      max-width: 420px;
+      margin: 0 auto 32px;
+      line-height: 1.6;
+    }
+    .error-actions {
+      display: flex;
+      gap: 12px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    .error-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      color: var(--cyan);
+      text-decoration: none;
+      font-family: var(--font-mono);
+      font-size: 0.85rem;
+      border: 1px solid rgba(6, 182, 212, 0.35);
+      padding: 8px 14px;
+      border-radius: 8px;
+      transition: all 0.25s var(--ease);
+    }
+    .error-link:hover {
+      background: rgba(6, 182, 212, 0.1);
+      border-color: var(--cyan);
+    }
+    .error-section-links {
+      margin-top: 40px;
+      padding-top: 32px;
+      border-top: 1px solid var(--line);
+      display: flex;
+      gap: 24px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+  </style>
+</head>
+<body class="no-js">
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header" id="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#home" aria-label="HAMSKY — back to top">
+        <span class="brand-mark" aria-hidden="true">
+          <img src="assets/images/logo-hamsky.jpg" alt="" width="44" height="44">
+        </span>
+        <span class="brand-text">HAMSKY<span class="brand-dot">.</span></span>
+      </a>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="error-container" aria-labelledby="error-title">
+      <h1 class="error-code" aria-hidden="true">404</h1>
+      <h2 id="error-title" class="error-title">Halaman Tidak Ditemukan</h2>
+      <p class="error-desc">
+        Maaf, halaman yang Anda cari tidak ada di situs ini. Mungkin alamatnya salah atau halamannya sudah dipindah.
+      </p>
+      <div class="error-actions">
+        <a class="btn btn-primary" href="#home">
+          Kembali ke Beranda
+          <svg class="icon" aria-hidden="true"><use href="#icon-arrow-up-right"></use></svg>
+        </a>
+        <a class="error-link" href="#about">Tentang Saya</a>
+        <a class="error-link" href="#projects">Projek &amp; Eksperimen</a>
+        <a class="error-link" href="#contact">Kontak</a>
+      </div>
+      <div class="error-section-links">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#achievements">Esports</a>
+        <a href="#education">Education</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-top">
+      <div class="footer-brand">
+        <p>
+          The personal portfolio of Muhammad Ilham Mauridha — IT student, aspiring developer,
+          and esports champion from Banda Aceh, Indonesia.
+        </p>
+        <div class="social-row">
+          <a class="icon-btn" href="https://github.com/hamseka1" target="_blank" rel="noopener noreferrer" aria-label="GitHub — hamseka1">
+            <svg class="icon" aria-hidden="true"><use href="#icon-github"></use></svg>
+          </a>
+          <a class="icon-btn" href="https://instagram.com/ilhmrdha" target="_blank" rel="noopener noreferrer" aria-label="Instagram — ilhmrdha">
+            <svg class="icon" aria-hidden="true"><use href="#icon-instagram"></use></svg>
+          </a>
+          <a class="icon-btn" href="mailto:ilhammauridhaa@gmail.com" aria-label="Email Hamsky">
+            <svg class="icon" aria-hidden="true"><use href="#icon-mail"></use></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>© <span id="year">2026</span> HAMSKY. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <svg xmlns="http://www.w3.org/2000/svg" class="svg-sprite" aria-hidden="true" focusable="false">
+    <symbol id="icon-arrow-up-right" viewBox="0 0 24 24">
+      <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5M18 7l-5 5"/>
+    </symbol>
+    <symbol id="icon-github" viewBox="0 0 24 24">
+      <path fill="currentColor" d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C-4.42-2.78-2.18-3.24-2.18-3.24-1.36-.98-1-3.96-1-3.96-2.85-.83-2.23-.48-2.23-.48-1.55.06-1 .28-1 .28s1.74-0.56 1.74-.56 1.9 1.36 1.9 1.36 2.2-1.02 2.2-1.02 1.47-0.36 2.21-0.54.7-.39-2.83-.97-2-1.5-2-1.5-1.7-1.17-1.39-1.17-1.39-3.24-1.16-2.28-1.48-.18-2.22-2.28-2.54-0.15-0.56-.95-1.98-0.06-0.32c-0.79-0.97-2.1-1.2-2.1-1.2-1.75-0.42-1.2-0.96-1.2-0.96 0.64-0.11 1.1-0.17 1.1-0.17 1.73-0.68 3.31-1.27 5.01-1.27 1.7 0 3.01 0.42 3.01 0.42 1.32-0.27 3-0.35 3-0.35 1.35-0.75 2.3-0.97 2.3-0.97-0.56-0.15-1.63-0.7-1.63-0.7 0.62-0.09 1.45-0.28 2.42-0.52-0.52-1.17-0.84-2.5-0.84-3.89 0-0.85 0.3-1.55 0.82-2.06-0.24-0.6-0.46-1.19-0.62-1.79-0.01-0.43 0.03-0.84 0.1-1.26-0.06-0.18-0.1-0.36-0.1-0.56 0-0.38 0.12-0.75 0.34-1.02 0.22-0.26 0.51-0.34 0.79-0.29l0.01-0.01c0.26-0.06 0.54-0.07 0.82-0.06 0.27-0.01 0.54 0.04 0.81 0.14 0.25 0.09 0.5 0.18 0.73 0.28 0.23 0.09 0.47 0.2 0.7 0.32 0.5 0.24 0.98 0.49 1.44 0.75 0.46 0.26 0.9 0.52 1.32 0.79 0.42 0.27 0.82 0.55 1.19 0.84 0.37 0.28 0.71 0.56 1.02 0.85 0.31 0.29 0.59 0.59 0.85 0.89 0.26 0.29 0.49 0.59 0.7 0.9 0.21 0.31 0.39 0.63 0.54 0.95 0.16 0.32 0.29 0.64 0.4 0.96 0.11 0.32 0.19 0.65 0.24 0.98 0.06 0.33 0.09 0.66 0.09 1 0 0.34 0.03 0.66 0.08 0.98 0.05 0.32 0.14 0.63 0.25 0.93 0.11 0.3 0.23 0.59 0.38 0.88 0.15 0.29 0.32 0.57 0.51 0.85 0.19 0.28 0.38 0.56 0.59 0.84 0.21 0.28 0.42 0.56 0.64 0.84 0.22 0.28 0.44 0.56 0.67 0.84 0.23 0.28 0.47 0.56 0.71 0.84 0.24 0.28 0.49 0.56 0.74 0.84 0.25 0.28 0.5 0.56 0.76 0.84 0.26 0.28 0.52 0.56 0.78 0.84 0.27 0.28 0.54 0.56 0.81 0.84 0.28 0.28 0.56 0.56 0.84 0.84 0.28 0.28 0.56 0.56 0.84 0.84 0.28 0.28 0.56 0.56 0.84 0.84z"/>
+    </symbol>
+    <symbol id="icon-instagram" viewBox="0 0 24 24">
+      <path fill="currentColor" d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+    </symbol>
+    <symbol id="icon-mail" viewBox="0 0 24 24">
+      <g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+        <polyline points="22,6 12,13 2,6"/>
+      </g>
+    </symbol>
+  </svg>
+  <script>
+    const year = document.getElementById("year");
+    if (year) year.textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
