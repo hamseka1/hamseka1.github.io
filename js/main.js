@@ -333,6 +333,54 @@
         "Contact form validation with an honest static-site flow"
       ],
       note: "This site is a living project and will continue to evolve as I learn and build more."
+    },
+    "proxmox": {
+      image: "assets/images/projects/proxmox.svg",
+      alt: "Abstract server virtualization illustration for the Proxmox homelab experiment",
+      kicker: "Learning experiment · Virtualization / Homelab",
+      title: "Proxmox Home Lab",
+      description: "Currently learning server virtualization with Proxmox VE. The experiment covers creating and managing virtual machines and Linux containers, configuring basic virtual networking, and exploring storage options in a home lab environment.",
+      tags: ["Proxmox VE", "Virtualization", "Linux", "Networking", "Home Lab"],
+      highlights: [
+        "Installed and configured Proxmox VE hypervisor",
+        "Created virtual machines with different operating systems",
+        "Set up Linux containers (LXC) for lightweight workloads",
+        "Configured virtual bridges and basic network routing",
+        "Explored storage and backup concepts for VMs"
+      ],
+      note: "This is a personal learning experiment. I am currently studying Proxmox VE and virtualization concepts — no production infrastructure is implied."
+    },
+    "laravel": {
+      image: "assets/images/projects/laravel.svg",
+      alt: "Abstract web application illustration for the Laravel framework experiment",
+      kicker: "Learning experiment · Web / Backend",
+      title: "Laravel Web Application",
+      description: "Currently learning backend web development with the Laravel PHP framework. The experiment covers routing, controllers, Blade templating, database connections, and basic form handling.",
+      tags: ["Laravel", "PHP", "Blade", "MySQL", "Backend"],
+      highlights: [
+        "Set up a fresh Laravel project locally",
+        "Defined web routes and controller methods",
+        "Rendered views using Blade templates",
+        "Connected to a MySQL database with Eloquent",
+        "Handled form input and basic validation"
+      ],
+      note: "This is a personal learning experiment. I am currently studying the Laravel framework — this is not a production application and no client work is implied."
+    },
+    "laragon": {
+      image: "assets/images/projects/laragon.svg",
+      alt: "Abstract local development illustration for the Laragon environment experiment",
+      kicker: "Learning experiment · Local Development / Tooling",
+      title: "Laragon Local Development",
+      description: "Currently learning local development environment setup with Laragon. The experiment covers installing and configuring Apache, MySQL, and PHP so web projects can run on a local machine without a remote server.",
+      tags: ["Laragon", "Apache", "MySQL", "PHP", "Local Development"],
+      highlights: [
+        "Installed Laragon as a local development environment",
+        "Started and stopped Apache and MySQL services",
+        "Created local test domains and virtual hosts",
+        "Connected PHP projects to a local MySQL database",
+        "Explored phpMyAdmin for database management"
+      ],
+      note: "This is a personal learning experiment. I am currently studying local development tooling — no production deployment is implied."
     }
   };
 

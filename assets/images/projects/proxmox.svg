@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" role="img" aria-label="Abstract illustration for the Proxmox virtualization experiment">
+  <defs>
+    <linearGradient id="px-bg" x1="0" y1="0" x2="1200" y2="750" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0B1220"/>
+      <stop offset=".55" stop-color="#101827"/>
+      <stop offset="1" stop-color="#080B12"/>
+    </linearGradient>
+    <linearGradient id="px-panel" x1="0" y1="750" x2="0" y2="250" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#2563EB"/>
+      <stop offset="1" stop-color="#06B6D4"/>
+    </linearGradient>
+    <radialGradient id="px-glow" cx="50%" cy="55%" r="55%">
+      <stop stop-color="#2563EB" stop-opacity=".28"/>
+      <stop offset="1" stop-color="#2563EB" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="px-grid" width="48" height="48" patternUnits="userSpaceOnUse">
+      <path d="M48 0H0v48" fill="none" stroke="#94A3B8" stroke-opacity=".06"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="750" fill="url(#px-bg)"/>
+  <rect width="1200" height="750" fill="url(#px-grid)"/>
+  <rect width="1200" height="750" fill="url(#px-glow)"/>
+  <g opacity=".9">
+    <!-- Host server chassis -->
+    <rect x="340" y="220" width="160" height="300" rx="12" fill="#080B12" stroke="#94A3B8" stroke-opacity=".18"/>
+    <rect x="340" y="220" width="160" height="44" rx="12" fill="#101827"/>
+    <circle cx="378" cy="242" r="5" fill="#F87171" opacity=".7"/>
+    <circle cx="400" cy="242" r="5" fill="#FBBF24" opacity=".7"/>
+    <circle cx="422" cy="242" r="5" fill="#34D399" opacity=".7"/>
+    <!-- VM 1 -->
+    <rect x="540" y="260" width="220" height="110" rx="10" fill="url(#px-panel)" opacity=".25"/>
+    <rect x="540" y="260" width="220" height="34" rx="10" fill="#101827"/>
+    <circle cx="578" cy="277" r="4" fill="#F87171" opacity=".6"/>
+    <circle cx="600" cy="277" r="4" fill="#FBBF24" opacity=".6"/>
+    <circle cx="622" cy="277" r="4" fill="#34D399" opacity=".6"/>
+    <rect x="566" y="320" width="80" height="8" rx="4" fill="#94A3B8" opacity=".25"/>
+    <rect x="566" y="338" width="110" height="7" rx="3.5" fill="#94A3B8" opacity=".18"/>
+    <!-- VM 2 -->
+    <rect x="800" y="390" width="180" height="120" rx="10" fill="url(#px-panel)" opacity=".22"/>
+    <rect x="800" y="390" width="180" height="34" rx="10" fill="#101827"/>
+    <circle cx="838" cy="407" r="4" fill="#F87171" opacity=".6"/>
+    <circle cx="860" cy="407" r="4" fill="#FBBF24" opacity=".6"/>
+    <circle cx="882" cy="407" r="4" fill="#34D399" opacity=".6"/>
+    <rect x="826" y="446" width="70" height="8" rx="4" fill="#94A3B8" opacity=".25"/>
+    <rect x="826" y="464" width="100" height="7" rx="3.5" fill="#94A3B8" opacity=".18"/>
+    <!-- VM 3 -->
+    <rect x="540" y="500" width="200" height="90" rx="10" fill="url(#px-panel)" opacity=".28"/>
+    <rect x="540" y="500" width="200" height="30" rx="10" fill="#101827"/>
+    <circle cx="578" cy="515" r="4" fill="#F87171" opacity=".6"/>
+    <circle cx="600" cy="515" r="4" fill="#FBBF24" opacity=".6"/>
+    <circle cx="622" cy="515" r="4" fill="#34D399" opacity=".6"/>
+    <rect x="566" y="544" width="70" height="8" rx="4" fill="#94A3B8" opacity=".25"/>
+    <rect x="566" y="560" width="100" height="7" rx="3.5" fill="#94A3B8" opacity=".18"/>
+    <!-- connectors -->
+    <path d="M500 370 Q570 370 570 370" stroke="#60A5FA" stroke-width="2" stroke-opacity=".4" fill="none"/>
+    <path d="M760 370 Q810 370 810 370" stroke="#60A5FA" stroke-width="2" stroke-opacity=".4" fill="none"/>
+    <path d="M500 490 Q540 490 540 490" stroke="#60A5FA" stroke-width="2" stroke-opacity=".4" fill="none"/>
+    <line x1="500" y1="370" x2="500" y2="490" stroke="#60A5FA" stroke-width="1.5" stroke-opacity=".25"/>
+  </g>
+  <g font-family="'JetBrains Mono', 'Consolas', monospace" fill="#94A3B8" font-size="15" letter-spacing="3">
+    <text x="150" y="650">BUILD / 04</text>
+    <text x="150" y="684" fill="#F8FAFC" font-family="'Space Grotesk', 'Segoe UI', sans-serif" font-size="30" font-weight="700" letter-spacing="1">PROXMOX HOMELAB</text>
+    <text x="1050" y="684" text-anchor="end" fill="#60A5FA">VIRTUALIZATION</text>
+  </g>
+  <rect x="149" y="708" width="54" height="3" rx="1.5" fill="#2563EB"/>
+  <rect x="211" y="708" width="18" height="3" rx="1.5" fill="#06B6D4"/>
+</svg>

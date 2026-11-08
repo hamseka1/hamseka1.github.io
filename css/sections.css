@@ -788,6 +788,11 @@
   color: #86EFAC;
 }
 
+.project-status-learning {
+  border-color: rgba(99, 102, 241, 0.34);
+  color: #A5B4FC;
+}
+
 .project-number {
   position: absolute;
   right: 15px;
