@@ -583,16 +583,20 @@
   text-underline-offset: 3px;
 }
 
-/* ---------- noir filter on all images ---------- */
+/* ---------- noir filter on achievement photos only (ML & PUBG) ---------- */
 
-img {
+.gallery[data-gallery="mobile-legends"] .gallery-item img,
+.gallery[data-gallery="pubg-mobile"] .gallery-item img {
   filter: grayscale(100%);
   transition: filter 0.35s var(--ease);
 }
 
-img:hover,
-img:focus,
-img.touched-color {
+.gallery[data-gallery="mobile-legends"] .gallery-item:hover img,
+.gallery[data-gallery="pubg-mobile"] .gallery-item:hover img,
+.gallery[data-gallery="mobile-legends"] .gallery-item:focus-visible img,
+.gallery[data-gallery="pubg-mobile"] .gallery-item:focus-visible img,
+.gallery[data-gallery="mobile-legends"] .gallery-item img.touched-color,
+.gallery[data-gallery="pubg-mobile"] .gallery-item img.touched-color {
   filter: grayscale(0%);
 }
 
