@@ -288,6 +288,19 @@
     if (isProtectedImage(event.target)) event.preventDefault();
   });
 
+  // Restore color on touch for mobile devices (no hover state)
+  document.addEventListener("touchstart", (event) => {
+    if (event.target instanceof HTMLImageElement) {
+      event.target.classList.add("touched-color");
+    }
+  });
+
+  document.addEventListener("touchend", (event) => {
+    if (event.target instanceof HTMLImageElement) {
+      event.target.classList.remove("touched-color");
+    }
+  });
+
   const projects = {
     "big-data": {
       image: "assets/images/projects/big-data.svg",

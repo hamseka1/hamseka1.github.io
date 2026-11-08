@@ -583,6 +583,19 @@
   text-underline-offset: 3px;
 }
 
+/* ---------- noir filter on all images ---------- */
+
+img {
+  filter: grayscale(100%);
+  transition: filter 0.35s var(--ease);
+}
+
+img:hover,
+img:focus,
+img.touched-color {
+  filter: grayscale(0%);
+}
+
 /* ---------- footer ---------- */
 
 .site-footer {
