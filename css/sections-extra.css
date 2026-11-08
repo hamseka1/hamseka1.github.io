@@ -31,8 +31,8 @@
 .game-mark {
   display: grid;
   place-items: center;
-  width: 51px;
-  height: 51px;
+  width: 64px;
+  height: 64px;
   border: 1px solid rgba(245, 158, 11, 0.26);
   border-radius: 16px;
   background: linear-gradient(145deg, rgba(245, 158, 11, 0.22), rgba(37, 99, 235, 0.1));
@@ -44,9 +44,10 @@
 .game-mark img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
   object-position: center;
   display: block;
+  padding: 4px;
 }
 
 .game-mark .icon {
