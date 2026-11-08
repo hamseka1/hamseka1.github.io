@@ -600,6 +600,19 @@
   filter: grayscale(0%);
 }
 
+/* ---------- noir filter on profile photo ---------- */
+
+.portrait-frame img {
+  filter: grayscale(100%);
+  transition: filter 0.35s var(--ease);
+}
+
+.portrait-frame img:hover,
+.portrait-frame img:focus,
+.portrait-frame img.touched-color {
+  filter: grayscale(0%);
+}
+
 /* ---------- footer ---------- */
 
 .site-footer {
