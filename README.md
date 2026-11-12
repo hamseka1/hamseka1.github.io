@@ -231,6 +231,14 @@ Host support:
 
 See `SECURITY.md` for the full model and deployment checklist. To report an issue, email **ilhammauridhaa@gmail.com**; details are also in `.well-known/security.txt`.
 
+## Design system
+
+The site uses an editorial tech-noir direction: hairline section rules, sharp 20 px surfaces, and the Sora display face paired with Inter and JetBrains Mono.
+
+- `css/refresh.css` is the 2026 refresh layer. It loads after `css/responsive.css` and only overrides typography, surfaces, spacing, and states — it never changes layout structure or content.
+- Design tokens (colors, radii, fonts, container width) live in `:root` at the top of `css/styles.css`; the refresh layer overrides the display font and radii.
+- To revert to the pre-refresh look: delete the `css/refresh.css` link from `index.html` and `404.html` (or delete the file), then restore the `Space+Grotesk` family in the Google Fonts link. A full copy of the previous version is kept in `../hamsky-backup-2026-11-12/`.
+
 ## Notes
 
 - HAMSKY is an online identity, not a legal name.
