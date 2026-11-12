@@ -622,4 +622,114 @@ h2 {
     border-color: #ccc;
     box-shadow: none;
   }
+
+  .hero-watermark {
+    display: none;
+  }
 }
+
+/* =========================================================
+   v2 — bolder cues so the refresh reads at a glance
+   ========================================================= */
+
+.hero-watermark {
+  position: absolute;
+  top: 44%;
+  left: 50%;
+  z-index: 0;
+  transform: translate(-50%, -50%);
+  color: transparent;
+  font-family: var(--font-display);
+  font-size: clamp(8rem, 24vw, 22rem);
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: -0.07em;
+  white-space: nowrap;
+  pointer-events: none;
+  user-select: none;
+  -webkit-text-stroke: 1px rgba(148, 163, 184, 0.075);
+}
+
+.hero-title {
+  font-size: clamp(3.6rem, 8.8vw, 7rem);
+}
+
+h2 {
+  font-size: clamp(2.2rem, 4.6vw, 3.85rem);
+  letter-spacing: -0.05em;
+}
+
+/* bright section index chips */
+.section-num {
+  min-width: 34px;
+  height: 34px;
+  padding: 0 8px;
+  border-color: transparent;
+  border-radius: 8px;
+  background: linear-gradient(135deg, #A5F3FC, #22D3EE 52%, #0EA5E9);
+  color: #04141C;
+  font-size: 0.66rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  box-shadow: 0 6px 18px rgba(34, 211, 238, 0.25);
+}
+
+.eyebrow {
+  color: var(--text-soft);
+}
+
+/* visible section banding */
+.skills,
+.achievements,
+.contact {
+  background:
+    radial-gradient(ellipse 70% 55% at 50% 0%, rgba(37, 99, 235, 0.06), transparent 72%),
+    #090D17;
+}
+
+/* cards carry a faint accent edge by default */
+.skill-card::after,
+.project-card::after {
+  opacity: 0.35;
+}
+
+/* brighter primary action */
+.btn-primary {
+  background: linear-gradient(135deg, #A5F3FC 0%, #22D3EE 48%, #0EA5E9 100%);
+  color: #04141C;
+  box-shadow: 0 14px 38px rgba(34, 211, 238, 0.26), inset 0 1px 0 rgba(255, 255, 255, 0.5);
+}
+
+.btn-primary:hover {
+  box-shadow: 0 20px 52px rgba(34, 211, 238, 0.36), inset 0 1px 0 rgba(255, 255, 255, 0.6);
+}
+
+.portrait-card::after {
+  border-color: rgba(34, 211, 238, 0.2);
+}
+
+.scroll-progress {
+  height: 3px;
+}
+
+@media (max-width: 720px) {
+  .hero-watermark {
+    top: 40%;
+    opacity: 0.75;
+  }
+
+  .hero-title {
+    font-size: clamp(2.9rem, 13vw, 4.6rem);
+  }
+
+  h2 {
+    font-size: clamp(2rem, 8.4vw, 2.9rem);
+  }
+
+  .section-num {
+    min-width: 30px;
+    height: 30px;
+    font-size: 0.6rem;
+  }
+}
+
